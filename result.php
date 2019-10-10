@@ -171,7 +171,7 @@ echo "</section>";
           Every PIN beginning with <b>19XX</b>
           is found in the <strong>top fifth</strong> of all PINs!.
         </p>
-        <img src="https://www.datagenetics.com/blog/september32012/c2.png" style="max-width:800px;"/>
+        <img src="img/c2.png" style="max-width:800px;"/>
       </section>
     </div>
     <section>
@@ -242,7 +242,7 @@ echo "</section>";
         pixel represents the first 2 digits and the vertical representing the last 2,<br>
         with the bottom left corner representing 0000.
       </p>
-      <img src="https://www.datagenetics.com/blog/september32012/grid.png" style="max-width: 800px;"/>
+      <img src="img/grid.png" style="max-width: 800px;"/>
     </section>
     <div>
       <section>
@@ -251,7 +251,7 @@ echo "</section>";
           This graph show the cumulative coverage
           of the N most common PINS
         </p>
-        <img src="https://www.datagenetics.com/blog/september32012/c.png" style="max-width: 800px;"/>
+        <img src="img/c.png" style="max-width: 800px;"/>
       </section>
       <section style="display: inline-block">
         <h3>Choosing a Date?</h3>
@@ -260,7 +260,7 @@ echo "</section>";
           is a glowing rectangle, showing<br>
           the PINs following the MMDD format.
         </p>
-        <img src="https://www.datagenetics.com/blog/september32012/mmdd.png" style="max-width: 200px;"/>
+        <img src="img/mmdd.png" style="max-width: 200px;"/>
       </section>
     </div>
   </div>

@@ -7,12 +7,10 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css?v=34">
+  <link rel="stylesheet" href="css/main.css?v=0.8">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -71,7 +69,7 @@
   }
 </script>
 <form action="./result.php" method="post" id="pin_form" onsubmit=" return check_pin();">
-  <input type="text" name="pin_code" id="pin_code" autocomplete="off" readonly>
+  <input type="password" name="pin_code" id="pin_code" autocomplete="off" readonly>
   <input type="button" value="1" onclick='document.getElementById("pin_code").value += "1"; check_pin()'>
   <input type="button" value="2" onclick='document.getElementById("pin_code").value += "2"; check_pin()'>
   <input type="button" value="3" onclick='document.getElementById("pin_code").value += "3"; check_pin()'>

@@ -100,7 +100,7 @@ textarea {
 body {
   background: #fff;
   text-align: center;
-  color: #fff;
+  font-family: "Gotham", "Verdana", sans-serif;
 }
 
 form {
@@ -122,15 +122,16 @@ form {
 form > * {
   margin: 0;
   padding: 1.33rem;
-  border: 4px solid #7566A0 ;
+  border: 4px solid #003C69 ;
   box-shadow: 0 0 13px rgba(255,255,255,0.8);
 }
 
-form>input[type="text"] {
+form>input[type="password"] {
   grid-column-start: 1;
   grid-column-end: 4;
-  color: #7566A0;
+  color: #003C69;
   background: #fff;
+  text-align: center;
 }
 
 form>input[type="button"], form>input[type="submit"] {
@@ -139,7 +140,7 @@ form>input[type="button"], form>input[type="submit"] {
   /*background: rgba(0,0,0,0);*/
   background: #FFF;
   border-radius: 100%;
-  color: #7566A0;
+  color: #003C69;
   text-align: center;
 }
 
@@ -213,6 +214,8 @@ form>input[type="button"]:nth-child(5n):active, form>input[type="submit"]:nth-ch
   height: 16.6vw;
   margin: 0.001%;
 }
+
+/*
 #style-grid > div:nth-child(10n+1) { background: #7566A0; }
 #style-grid > div:nth-child(10n+2) { background: #C6893F; }
 #style-grid > div:nth-child(10n+3) { background: #B46A55; }
@@ -223,6 +226,11 @@ form>input[type="button"]:nth-child(5n):active, form>input[type="submit"]:nth-ch
 #style-grid > div:nth-child(10n+8) { background: #B46A55; }
 #style-grid > div:nth-child(10n+9) { background: #C6893F; }
 #style-grid > div:nth-child(10n+10) { background: #7566A0; }
+*/
+
+#style-grid > div:nth-child(3n+1) { background: #FFB500; }
+#style-grid > div:nth-child(3n+2) { background: #CE1F2C; }
+#style-grid > div:nth-child(3n+3) { background: #003C69; }
 
 #style-grid > div.w1 { width: 16.6vw; }
 #style-grid > div.w2 { width: 33vw; }
@@ -243,6 +251,70 @@ form>input[type="button"]:nth-child(5n):active, form>input[type="submit"]:nth-ch
 #style-grid > div.mr2 { margin-right: 33vw; }
 #style-grid > div.mr3 { margin-right: 50.00vw; }
 
+#three-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#three-container>* {
+  display: block;
+  padding: 2rem;
+  margin: 2rem;
+  border: none;
+  font-weight: 500;
+  color: #fff;
+}
+#three-container strong {
+  text-decoration: underline;
+}
+
+#three-container>button {
+  background: #FFB500;
+  cursor: pointer;
+}
+#three-container > section:nth-child(2) {
+  background: #CE1F2C;
+}
+#three-container > section:nth-child(3) {
+  background: #003C69;
+}
+
+aside {
+  margin-top: 2rem;
+  border-top: 1rem dotted #74AA50;;
+  padding-top: 2rem;
+}
+
+aside > h2 {
+  color: #7566A0;;
+}
+aside > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+aside > div section {
+  display: block;
+  padding: 2rem;
+  margin: 2rem;
+  border: none;
+  font-weight: 500;
+  color: #fff;
+  align-self:flex-start;
+}
+aside a {
+  color: #FFB500;
+}
+aside > div section:nth-child(5n+1) { background: #7566A0; }
+aside > div section:nth-child(5n+2) { background: #B46A55; }
+aside > div section:nth-child(5n+3) { background: #74AA50; }
+aside > div section:nth-child(5n+4) { background: #69B3E7; }
+aside > div section:nth-child(5n+5) { background: #C6893F; }
+
+aside > div section img {
+  width: 100%;
+}
 
 /* ==========================================================================
    Helper classes

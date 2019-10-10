@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 
 // sql to create table
 $query  = "";
-// $query .= "DROP TABLE {$table};";
+$query .= "DROP TABLE {$table};";
 $query .= "CREATE TABLE {$table} ( pin CHAR(4) PRIMARY KEY, counter INTEGER );";
 
 $myfile = fopen($file, "r");

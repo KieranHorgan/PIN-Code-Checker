@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$username = "";
+$username = "root";
 $password = "";
 $dbname = "test";
 $table = "open_day_pin_codes";
@@ -14,14 +14,23 @@ if ($conn->connect_error) {
 
 // sql to create table
 $query  = "";
-$query .= "DROP TABLE {$table};";
+// $query .= "DROP TABLE {$table};";
 $query .= "CREATE TABLE {$table} ( pin CHAR(4) PRIMARY KEY, counter INTEGER );";
+$query .= "INSERT INTO {$table} VALUES ";
 
 for($a = "0"; $a <= "9"; $a++)
     for($b = "0"; $b <= "9"; $b++)
         for($c = "0"; $c <= "9"; $c++)
-            for($d = "0"; $d <= "9"; $d++)
-                $query .= "INSERT INTO {$table} VALUES (\"{$a}{$b}{$c}{$d}\", 0);";
+            for($d = "0"; $d <= "9"; $d++) {
+                $query .= "(\"{$a}{$b}{$c}{$d}\", 0)";
+				if($a != "9" ||
+				   $b != "9" ||
+				   $c != "9" ||
+				   $d != "9") {
+					$query .= ", ";
+			    }
+			}
+$query .= ";";
 
 if ($conn->multi_query($query) === TRUE) {
     echo "Table created successfully";

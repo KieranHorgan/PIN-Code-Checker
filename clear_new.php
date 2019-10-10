@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test";
+$servername = "mysql.netsoc.co";
+$username = "kieran";
+$password = "wFyzRAAAWI0";
+$dbname = "kieran_pin_codes";
 $table = "open_day_pin_codes";
 
 // Create connection
@@ -33,7 +33,7 @@ for($a = "0"; $a <= "9"; $a++)
 $query .= ";";
 
 if ($conn->multi_query($query) === TRUE) {
-    echo "Table created successfully";
+    echo "Table cleared successfully";
 } else {
     echo "Error creating table: " . $conn->error;
 }
@@ -41,3 +41,16 @@ if ($conn->multi_query($query) === TRUE) {
 
 $conn->close();
 ?>
+      <p>You will be redirected in <span id="counter">5</span> second(s).</p>
+      <script type="text/javascript">
+      function countdown() {
+          var i = document.getElementById('counter');
+          if (parseInt(i.innerHTML)<=0) {
+              location.href = './';
+          }
+      if (parseInt(i.innerHTML)!=0) {
+          i.innerHTML = parseInt(i.innerHTML)-1;
+      }
+      }
+      setInterval(function(){ countdown(); },1000);
+      </script>

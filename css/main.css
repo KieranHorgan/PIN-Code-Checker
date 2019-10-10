@@ -126,7 +126,7 @@ form > * {
   box-shadow: 0 0 13px rgba(255,255,255,0.8);
 }
 
-form>input[type="password"] {
+form>input[type="text"] {
   grid-column-start: 1;
   grid-column-end: 4;
   color: #003C69;
@@ -202,6 +202,7 @@ form>input[type="button"]:nth-child(5n):active, form>input[type="submit"]:nth-ch
   height: 100%;
   overflow: hidden;
   font-size: 1vw;
+  background: #CE1F2C;
 }
 
 #style-grid > div {
@@ -209,7 +210,7 @@ form>input[type="button"]:nth-child(5n):active, form>input[type="submit"]:nth-ch
   display: inline-block;
   float: left;
   box-sizing: border-box;
-  border: 2vw solid #fff;
+  /*border: 2vw solid #fff;*/
   width: 16.6vw;
   height: 16.6vw;
   margin: 0.001%;
@@ -228,9 +229,9 @@ form>input[type="button"]:nth-child(5n):active, form>input[type="submit"]:nth-ch
 #style-grid > div:nth-child(10n+10) { background: #7566A0; }
 */
 
-#style-grid > div:nth-child(3n+1) { background: #FFB500; }
-#style-grid > div:nth-child(3n+2) { background: #CE1F2C; }
-#style-grid > div:nth-child(3n+3) { background: #003C69; }
+#style-grid > div { background: #FFB500; }
+/*#style-grid > div:nth-child(3n+2) { background: #CE1F2C; }*/
+/*#style-grid > div:nth-child(3n+3) { background: #003C69; }*/
 
 #style-grid > div.w1 { width: 16.6vw; }
 #style-grid > div.w2 { width: 33vw; }
@@ -255,11 +256,28 @@ form>input[type="button"]:nth-child(5n):active, form>input[type="submit"]:nth-ch
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  /*font-size: 150%;*/
 }
+
+@media only screen and (min-width: 1000px) {
+  /* Style adjustments for viewports that meet the condition */
+  #three-container {
+    font-size: 125%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  /* Style adjustments for viewports that meet the condition */
+  #three-container {
+    font-size: 150%;
+  }
+}
+
+
 #three-container>* {
   display: block;
-  padding: 2rem;
-  margin: 2rem;
+  padding: 2em;
+  margin: 2em;
   border: none;
   font-weight: 500;
   color: #fff;
@@ -272,11 +290,32 @@ form>input[type="button"]:nth-child(5n):active, form>input[type="submit"]:nth-ch
   background: #FFB500;
   cursor: pointer;
 }
-#three-container > section:nth-child(2) {
+#three-container > section:nth-child(1) {
   background: #CE1F2C;
 }
-#three-container > section:nth-child(3) {
+#three-container > section:nth-child(2) {
   background: #003C69;
+}
+#three-container > div {
+  padding: 1rem;
+  background: #CE1F2C;
+}
+#phone-or-tablet {
+   display: none;
+   position: absolute;
+   left: 2rem;
+   top: 2rem;
+   padding: 1rem;
+   background: #FFB500;
+ }
+@media only screen and (min-width: 1400px) {
+  /* Style adjustments for viewports that meet the condition */
+  #phone-or-tablet {
+    display: inline-block;
+  }
+}
+#three-container > div > h3, #phone-or-tablet {
+  margin: 1rem 0;
 }
 
 aside {

@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test";
+$servername = "mysql.netsoc.co";
+$username = "kieran";
+$password = "wFyzRAAAWI0";
+$dbname = "kieran_pin_codes";
 $table = "open_day_pin_codes";
 
 // Create connection

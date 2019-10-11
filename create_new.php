@@ -1,7 +1,7 @@
 <?php
 $servername = "mysql.netsoc.co";
-$username = "kieran";
-$password = "wFyzRAAAWI0";
+$username = "";
+$password = "";
 $dbname = "kieran_pin_codes";
 $table = "open_day_pin_codes";
 

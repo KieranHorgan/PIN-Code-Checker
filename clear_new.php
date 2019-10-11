@@ -1,7 +1,7 @@
 <?php
 $servername = "mysql.netsoc.co";
-$username = "kieran";
-$password = "wFyzRAAAWI0";
+$username = "";
+$password = "";
 $dbname = "kieran_pin_codes";
 $table = "open_day_pin_codes";
 
@@ -23,12 +23,12 @@ for($a = "0"; $a <= "9"; $a++)
         for($c = "0"; $c <= "9"; $c++)
             for($d = "0"; $d <= "9"; $d++) {
                 $query .= "(\"{$a}{$b}{$c}{$d}\", 0)";
-				if($a != "9" || 
-				   $b != "9" || 
-				   $c != "9" || 
+				if($a != "9" ||
+				   $b != "9" ||
+				   $c != "9" ||
 				   $d != "9") {
 					$query .= ", ";
-			    }				   
+			    }
 			}
 $query .= ";";
 

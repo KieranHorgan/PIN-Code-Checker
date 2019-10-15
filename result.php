@@ -24,7 +24,7 @@
 <?php
 $servername = "mysql.netsoc.co";
 $username = "kieran";
-$password = "wFyzRAAAWI0";
+$password = "bXDXsIS9IB1#KyVeD!WANNA2%rAr0J56";
 $dbname = "kieran_pin_codes";
 $existing_table = "existing_pin_codes";
 $open_day_table = "open_day_pin_codes";
@@ -37,6 +37,10 @@ if ($conn->connect_error) {
 }
 
 $user_pin = $_POST['pin_code'];
+$user_pin = trim($user_pin);
+$user_pin = stripslashes($user_pin);
+$user_pin = htmlspecialchars($user_pin);
+
 if (strlen($user_pin) != 4)
     throw new Exception("Pin code must be exactly 4 digits long");
 

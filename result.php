@@ -24,7 +24,7 @@
 <?php
 $servername = "mysql.netsoc.co";
 $username = "kieran";
-$password = "bXDXsIS9IB1#KyVeD!WANNA2%rAr0J56";
+$password = "wFyzRAAAWI0";
 $dbname = "kieran_pin_codes";
 $existing_table = "existing_pin_codes";
 $open_day_table = "open_day_pin_codes";
